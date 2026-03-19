@@ -1,8 +1,8 @@
-🌦️ Weather App (React + Material UI)
+# 🌦️ Weather App (React + Material UI)
 
 A simple Weather Application built using React, Material UI, and OpenWeather API that allows users to search real-time weather data by city name.
 
-🚀 Features
+## 🚀 Features
 
 🔍 Search weather by city
 
@@ -32,7 +32,7 @@ Weather Description
 
 ❌ Error handling for invalid cities
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 React (Hooks - useState)
 
@@ -42,16 +42,16 @@ OpenWeather API
 
 CSS
 
-📂 Components Used
+## 📂 Components Used
 1️⃣ WeatherApp.jsx
 
-Main component
+### Main component
 
 Stores weather data using useState
 
 Passes data to child components
 
-2️⃣ SearchBox.jsx
+### 2️⃣ SearchBox.jsx
 
 Takes city input
 
@@ -59,7 +59,7 @@ Calls OpenWeather API
 
 Sends data to parent using updateInfo
 
-3️⃣ InfoBox.jsx
+### 3️⃣ InfoBox.jsx
 
 Displays weather data in a card
 
@@ -67,15 +67,15 @@ Uses Material UI components
 
 Shows icons and images based on weather
 
-⚙️ Installation & Setup
-1️⃣ Clone project
+## ⚙️ Installation & Setup
+### 1️⃣ Clone project
 git clone https://github.com/your-username/weather-app.git
 cd weather-app
-2️⃣ Install dependencies
+### 2️⃣ Install dependencies
 npm install
-3️⃣ Run project
+### 3️⃣ Run project
 npm run dev
-🔑 API Setup
+## 🔑 API Setup
 
 This project uses OpenWeather API.
 
@@ -86,7 +86,7 @@ const API_KEY = "YOUR_API_KEY";
 Get API key from:
 👉 https://openweathermap.org/api
 
-🧠 Working Flow
+## 🧠 Working Flow
 
 User enters city name
 
@@ -96,12 +96,12 @@ Data is passed to WeatherApp
 
 InfoBox displays data dynamically
 
-🎨 UI Logic
+## 🎨 UI Logic
 image = humidity > 80 ? rain
       : temp > 15 ? hot
       : cold
 
-Icons:
+## Icons:
 
 🌧️ Rain → Thunderstorm Icon
 
@@ -109,25 +109,25 @@ Icons:
 
 ❄️ Cold → Snow Icon
 
-❗ Error Handling
+## ❗ Error Handling
 
 If city is invalid:
 
 No such place exists
-📌 Known Issues
+## 📌 Known Issues
 
 API key is exposed (should use .env in production)
 
 No loading spinner
 
-💡 Future Improvements
+## 💡 Future Improvements
 
 
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Kuldeep
 
-⭐ Support
+## ⭐ Support
 
 If you like this project, give it a ⭐ on GitHub 😊
