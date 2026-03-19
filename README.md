@@ -1,16 +1,133 @@
-# React + Vite
+🌦️ Weather App (React + Material UI)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Weather Application built using React, Material UI, and OpenWeather API that allows users to search real-time weather data by city name.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔍 Search weather by city
 
-## React Compiler
+🌡️ Shows:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Current Temperature
 
-## Expanding the ESLint configuration
+Min & Max Temperature
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Humidity
+
+Feels Like Temperature
+
+Weather Description
+
+🎨 Dynamic UI:
+
+🌧️ Rain (Humidity > 80)
+
+☀️ Hot (Temp > 15°C)
+
+❄️ Cold (Otherwise)
+
+🖼️ Dynamic weather images
+
+⚡ Real-time API data
+
+❌ Error handling for invalid cities
+
+🛠️ Tech Stack
+
+React (Hooks - useState)
+
+Material UI (MUI Components & Icons)
+
+OpenWeather API
+
+CSS
+
+📂 Components Used
+1️⃣ WeatherApp.jsx
+
+Main component
+
+Stores weather data using useState
+
+Passes data to child components
+
+2️⃣ SearchBox.jsx
+
+Takes city input
+
+Calls OpenWeather API
+
+Sends data to parent using updateInfo
+
+3️⃣ InfoBox.jsx
+
+Displays weather data in a card
+
+Uses Material UI components
+
+Shows icons and images based on weather
+
+⚙️ Installation & Setup
+1️⃣ Clone project
+git clone https://github.com/your-username/weather-app.git
+cd weather-app
+2️⃣ Install dependencies
+npm install
+3️⃣ Run project
+npm run dev
+🔑 API Setup
+
+This project uses OpenWeather API.
+
+Replace your API key in SearchBox.jsx:
+
+const API_KEY = "YOUR_API_KEY";
+
+Get API key from:
+👉 https://openweathermap.org/api
+
+🧠 Working Flow
+
+User enters city name
+
+SearchBox fetches weather data
+
+Data is passed to WeatherApp
+
+InfoBox displays data dynamically
+
+🎨 UI Logic
+image = humidity > 80 ? rain
+      : temp > 15 ? hot
+      : cold
+
+Icons:
+
+🌧️ Rain → Thunderstorm Icon
+
+☀️ Hot → Sun Icon
+
+❄️ Cold → Snow Icon
+
+❗ Error Handling
+
+If city is invalid:
+
+No such place exists
+📌 Known Issues
+
+API key is exposed (should use .env in production)
+
+No loading spinner
+
+💡 Future Improvements
+
+
+
+👨‍💻 Author
+
+Kuldeep
+
+⭐ Support
+
+If you like this project, give it a ⭐ on GitHub 😊
